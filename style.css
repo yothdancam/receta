@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root{
+--colorhtml:#1c1c1c;
+--tamanofont:18px;
+--colorheader:#e6a738;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size:var(--tamanofont) ;
+  font-family:'lato',sans-serif;
+  color:var(--colorhtml);
+ 
+}
+
+header{
+  width: 100%;
+  height: 72px;
+  background-color: var(--colorheader);
+  display: flex;  
+  justify-content: space-between;  /* para que los elementos estén espaciados uniformemente.*/
+  align-items: center;  /*para que los elementos estén alineados en el centro verticalmente.*/
+  padding: 1rem;
+}
+strong{
+  color:#343a40; 
+}
+
+.IngredientList{
+  list-style-type:square;
+}
+#logo{
+max-width: 15rem;
+
+}
+
+ .list{
+  list-style-type: none;/* para quitar los puntos de la lista*/
+  display:flex; /*para acomodar los elementos a horizontal */
+  gap: 1rem;/* para separar los itens */
+  align-items: center;
+ }
+ .list li a {
+  text-decoration: none;/*quita el subrayado del enlace de cada elemento de la list*/
+  color:#1c1c1c;
+ }
+ 
+ #image{
+margin-top: 10px;
+padding-left: 3px;
+transition: box-shadow 0.3s ease; /*box-shadow es cuando se pasa el cursor arriba*/
+width: 450px;
+height: 450px;
+border-width: 4px;
+border-color: grey;
+border-style: none; 
+border-radius: 20px; /*para redondear los bordes*/
+margin: 20px;
+cursor:pointer; /*es la manito*/
+}
+.buscador {
+  width:300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+.input:hover{
+  background-color:rgba(182, 180, 180, 0.839);
+}
+.conten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imgprincipal{
+
+ max-width: 100%;
+ 
+ }
+ 
+ #barra{
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 3rem;
+   width: 100%;
+   background-color: #343a40;
+   color: #ececec;
+ 
+ }
+
+.img_receta{
+display: flex;
+flex-wrap: wrap;
+max-width:100%;
+width:1200px;
+}
+
+#image:hover{
+  box-shadow: 0 0.16px 20px rgba(16, 13, 7, 0.5); }/* indica la difuminacion ,y el porcentaje de sombra*/
+ 
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-text {
+    font-size: 16px;
+}
+
+.footer-link {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+    text-decoration: none;
+} 
+
+.hover-card:hover {
+  
+  background-color: rgb(172, 171, 171);
+  color: white !important;
+
+} 
+.lista li::marker {
+    color:rgba(58, 56, 67, 0.451);/*Cambia el color de los num de la lista con el selector marker*/
+    font-size: 27px;  
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+@media screen and (max-width: 650px) {
+  
+  #imgprincipal {
+    width: 100%; /* Ajusta el ancho al 100% para que se adapte al ancho de la pantalla */
+    max-height: 300px; /* Establece una altura máxima para las imágenes en dispositivos móviles */
+  }
+
+  .carousel-inner {
+    max-height: 300px; /* Establece una altura máxima para el carrusel en dispositivos móviles */
+  }
+ 
+ 
+  #logo {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .buscador {
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    padding: 0;
+    width: 100%;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+  }
+
+  .list li {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0.5rem 1rem; /* Añade espacio vertical y horizontal entre los elementos */
+  }
+
+  .imgprincipal {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+
+

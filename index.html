@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recetas Deliciosas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./multimedia/logo.png" alt="Recetas Deliciosas" id="logo"> 
+      <nav class="nav">
+           <ul class="list">
+              <li><a href="#">Inicio</a> </li>
+              <li><a href="#">Quiénes somos</a> </li>
+              <li><a href="#">Servicios</a> </li>
+              <li><a href="#">Qué hacemos</a> </li>
+              <li><a href="#">Contacto</a> </li>
+
+           </ul>
+      </nav>
+
+       <svg xmlns="http://www.w3.org/2000/svg" width="35"height="35"viewBox="0 0 512 496">
+          <path fill="currentColor"d="M448 69H137l-3-12q-5-23-22.5-37.5T70 5H21q-9 0-15 6T0 27q0 9 6 15t15 6h49q19 0 22 17l49 256q6 21 23.5 34t38.5 13h202q10 0 16-6t6-15q0-22-22-22H203q-14 0-20-12l-2-9h214q20 0 36.5-12t22.5-31l58-123v-5q0-27-18.5-45.5T448 69zM192 261h-19l-28-149h47v149zm85 0h-42V112h42v149zm86 0h-43V112h43v149zm53-17v2q-3 10-11 13V112h43q18 0 21 17zM256 432q0 18-12.5 30.5T213 475q-17 0-29.5-12.5T171 432t12.5-30.5T213 389q18 0 30.5 12.5T256 432zm171 0q0 18-12.5 30.5T384 475t-30.5-12.5T341 432t12.5-30.5T384 389t30.5 12.5T427 432z"/>
+       </svg>
+      <div class="buscador">
+        <input placeholder="Buscar recetas.." id="input"
+          class="input" name="text" type="text"/>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </header>
+    
+    <main>
+      <div id="carouselExampleIndicators carrusel" class=" carousel slide m-auto" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img id="imgprincipal"src="imagenes receta/imagen principal.jpg" class="img-fluid d-block w-100 " alt="imagen principal"style="height: 720px;"> 
+          </div>
+          <div class="carousel-item ">
+            <img id="imgprincipal" src="imagenes receta/personasComiendo.jpg" class="d-block w-100 img-fluid " alt="Personas comiendo"style="height: 720px;">
+          </div>
+          <div class="carousel-item ">
+            <img id="imgprincipal" src="imagenes receta/hombre-chef-cocinando-pollo-asiatico-cocina-cafe.jpg" class="d-block w-100 img-fluid" alt="cheff"style="height: 720px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <div id="barra">RECETAS</div>
+     
+     <div class=" container d-flex justify-content-between flex-wrap">
+      <div  class="card m-auto   mt-3   border-dark hover-card col-12" style="width: 14rem; height: 15rem;" >
+        <a href="file:///C:/Users/Daniel/OneDrive/Documentos/HTML/receta/empanadas.html" class="text-decoration-none" target="_blank"> 
+         <img src="imagenes receta/1000_F_309844606_gUF5TdV8Fcrjostmom0T659W8G36TfE0.jpg" class="card-img-top" alt="empanadas">
+         <div class="card-body">
+          <h5 class="titulo text-center text-dark"> Empanadas</h5>
+         </div>
+        </a> 
+       
+      </div>
+
+      <div  class="card m-auto mt-3  border-dark hover-card col-12" style="width: 14rem ;height: 15rem;">
+        <a href="file:///C:/Users/Daniel/OneDrive/Documentos/HTML/receta/empanadas.html"class="text-decoration-none" target="_blank"> 
+         <img src="imagenes receta/cerrar-deliciosa-pizza.jpg" class="card-img-top" alt="empanadas">
+         <div class="card-body">
+          <h5 class="titulo text-center text-dark"> Pizza cacera</h5> 
+         </div>
+        </a> 
+       
+      </div>
+
+      <div  class="card m-auto mt-3  border-dark hover-card col-12" style="width: 14rem;height: 15rem;">
+        <a href="file:///C:/Users/Daniel/OneDrive/Documentos/HTML/receta/paella.html"class="text-decoration-none" target="_blank"> 
+         <img src="imagenes receta/1000_F_620456506_zyKFSxBWAYb30583g2G48uVgL7EaawIL.jpg" class="card-img-top" alt="empanadas">
+         <div class="card-body">
+          <h5 class="titulo text-center text-dark">Paella</h5>
+         </div>
+        </a> 
+        
+      </div>
+
+      <div  class="card m-auto mt-3 border-dark hover-card col-12" style="width: 14rem;height: 15rem;">
+        <a href="file:///C:/Users/Daniel/OneDrive/Documentos/HTML/receta/empanadas.html"class="text-decoration-none" target="_blank"> 
+         <img src="imagenes receta/1000_F_221872009_YKKoft9wGDhCBDVqOjavrqJxYT6SGUQf.jpg" class="card-img-top" alt="empanadas">
+         <div class="card-body">
+          <h5 class="titulo text-center text-dark ">Hallacas</h5> 
+         </div>
+        </a> 
+       
+      </div>
+
+      <div class="card m-auto mt-4 border-dark hover-card col-12" style="width: 14rem;height: 15rem;">
+        <a href="file:///C:/Users/Daniel/OneDrive/Documentos/HTML/receta/empanadas.html"class="text-decoration-none" target="_blank"> 
+         <img src="imagenes receta/1000_F_639883384_awJ0hXrbMFQ7V1tyFrSJxrqsRxuqrDhj.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+          <h5 class="card-title  text-center text-dark">Torta tres leches</h5>
+         </div>
+        </a> 
+        
+      </div>
+
+      <div class="card m-auto mt-4 border-dark hover-card col-12" style="width: 14rem;height: 15rem;">
+        <a href="file:///C:/Users/Daniel/OneDrive/Documentos/HTML/receta/empanadas.html"class="text-decoration-none" target="_blank">   
+         <img src="imagenes receta/tortaChocolate.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+          <h5 class="card-title  text-center text-dark">Torta de chocolate</h5>
+         </div>
+        </a> 
+        
+      </div>
+
+      <div class="card m-auto mt-4 border-dark hover-card col-12" style="width: 14rem;height: 15rem;">
+        <a href="file:///C:/Users/Daniel/OneDrive/Documentos/HTML/receta/empanadas.html"class="text-decoration-none" target="_blank"> 
+         <img src="imagenes receta/1000_F_620583107_qLGwR7e2m8Csfh0PqePgF6Nqmr6F6FcZ.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+          <h5 class="card-title  text-center text-dark">Pollo asado</h5>
+         </div>
+        </a>
+        
+      </div>
+
+        <div class="card m-auto mt-4 border-dark hover-card col-12" style="width: 14rem;height: 15rem;">
+          <a href="file:///C:/Users/Daniel/OneDrive/Documentos/HTML/receta/empanadas.html"class="text-decoration-none" target="_blank">   
+            <img src="imagenes receta/1000_F_477184385_1M9SAL34HWVIR0vxkKygxLcEjaJTxraM.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title  text-center text-dark">Pan de jamón</h5>
+            </div>
+         </a>
+       
+        </div>
+
+     </div>
+    
+    </main>
+    <footer class="footer mt-4">
+      <div class="container">
+      <div class="row">
+          <div class="col">
+              <p class="footer-text">Recetas Deliciosas &copy; 2023-Todos los derechos reservados</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+            <p class="footer-text">Síguenos en redes sociales:</p>
+            <a href="#" class="footer-link"><i class="fab fa-facebook fa-2x "></i></a> 
+            <a href="#" class="footer-link"><i class="fab fa-twitter fa-2x"></i></a> 
+            <a href="#" class="footer-link"><i class="fab fa-instagram fa-2x"></i></a>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
