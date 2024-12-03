@@ -1,3 +1,7 @@
+.titulo{
+  color: #e40474;
+}
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -79,7 +83,7 @@
   
   .button-submit {
     margin: 20px 0 10px 0;
-    background-color: #151717;
+    background-color: #e40474;
     border: none;
     color: white;
     font-size: 15px;
