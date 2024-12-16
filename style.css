@@ -22,33 +22,46 @@ html{
 header{
   width: 100%;
   height: 80px;
-  background-color:  #e40474; /*  var(--colorheader) ; */
+  background-color:  #e40474; 
   display: flex;  
   justify-content: space-between;  /* para que los elementos estén espaciados uniformemente.*/
   align-items: center;  /*para que los elementos estén alineados en el centro verticalmente.*/
   padding: 1rem;
 }
-strong{
-  color:#343a40; 
-}
-
-.IngredientList{
-  list-style-type:square;
-}
-#logo{
- max-width: 7rem;
- margin-left: 5%; 
-
-}
 
 .nav{
   display: flex;
+  justify-content: space-between;
+  margin: 0 80px;
 }
+
+.navbar-toggler {
+  display: none; /* Oculto por defecto */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.linea {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+#logo{
+  max-width: 7rem;
+  margin-left: 5%; 
+ }
 
  .list{
   list-style-type: none;/* para quitar los puntos de la lista*/
   display:flex; /*para acomodar los elementos a horizontal */
-  gap: 1rem;/* para separar los itens */
+  gap: 40px;/* para separar los itens */
   align-items: center;
   justify-content: center;
   margin-top: 4%;
@@ -58,10 +71,26 @@ strong{
   color:#FFFFFF;
  }
 
+  .list li a:hover{
+    color:#343a40;
+  }
+
  .carrito{
   color: #ffffff;
  }
- 
+
+  .carrito:hover{
+    color:#343a40;
+  }
+  
+strong{
+  color:#343a40; 
+}
+
+.IngredientList{
+  list-style-type:square;
+}
+
  #image{
 margin-top: 10px;
 padding-left: 3px;
@@ -86,6 +115,7 @@ cursor:pointer; /*es la manito*/
   overflow: hidden;
   cursor: pointer;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  margin-right: 20px;
 
 }
 
@@ -150,6 +180,20 @@ width:1200px;
     font-size: 32px;
     font-family: "Nunito Sans", sans-serif;
   }
+
+  #cuenta-carrito{
+   background-color: #04b7e4;
+   border-radius: 100%;
+   width: 20px;
+   line-height: 20px;
+   display: inline-block;
+   color: white;
+   aspect-ratio: 1;
+   text-align: center;
+   position: absolute;
+
+}
+
 footer {
     background-color: #343a40;
     color: white;
@@ -209,8 +253,28 @@ footer {
   }
 
   .navbar-toggler {
-    display: block;
-    margin-top: 10px;
+    display: flex; /* Ahora visible */
+  }
+  .list {
+    display: none; /* Oculta el menú inicialmente */
+    flex-direction: column;
+    position: absolute; /* Fija su posición en relación al header */
+    top: 80px; /* Debajo del header (ajustar según la altura del header) */
+    left: 0; /* Alineado al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #e40474; /* Fondo del menú */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    padding: 1rem 0; /* Espaciado interno */
+    transition: all 0.3s ease-in-out; /* Animación suave */
+  }
+
+  .list.active {
+    display: flex; /* Muestra el menú cuando está activo */
+  }
+
+  .list li {
+    margin: 1rem 0; /* Espaciado vertical entre los elementos */
+    text-align: center; /* Centra el texto */
   }
 
   .nav {
