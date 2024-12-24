@@ -127,4 +127,22 @@
     display: flex;
     justify-content: center !important;
   }
-  
+  @media screen and (max-width: 650px) {
+
+    .form-container {
+      display: flex;
+     padding-left:5px;
+     
+      justify-content: center;
+      align-items: center;
+      width: 100%; /* Ajusta el ancho del formulario */
+      margin: 0 auto; /* Centra el formulario horizontalmente */
+      height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .form {
+      width: 100%; /* Ajusta el ancho del formulario */
+      padding: 20px; /* Ajusta el espacio interno del formulario */
+    }
+
+  }

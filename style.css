@@ -259,7 +259,7 @@ footer {
     margin-left: -180px;
    
   }
-  .nav, .list, .buscador, .carrito {
+  .nav, .list, .carrito {
     max-width: 100%; /* Asegura que no se desborden */
     box-sizing: border-box;
   }
